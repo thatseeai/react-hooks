@@ -3,8 +3,8 @@ import { HOOKS_DATA, getHooksByCategory, getHookById } from './hooks';
 
 describe('hooks utility', () => {
   describe('HOOKS_DATA', () => {
-    it('should contain 19 hooks', () => {
-      expect(HOOKS_DATA).toHaveLength(19);
+    it('should contain 25 hooks (19 React + 4 TanStack + 2 Patterns)', () => {
+      expect(HOOKS_DATA).toHaveLength(25);
     });
 
     it('should have all required properties for each hook', () => {
@@ -25,7 +25,7 @@ describe('hooks utility', () => {
     });
 
     it('should have valid categories', () => {
-      const validCategories = ['state', 'effect', 'performance', 'dom', 'other', 'react19'];
+      const validCategories = ['state', 'effect', 'performance', 'dom', 'other', 'react19', 'tanstack', 'patterns'];
       HOOKS_DATA.forEach((hook) => {
         expect(validCategories).toContain(hook.category);
       });
@@ -33,7 +33,7 @@ describe('hooks utility', () => {
 
     it('should have correct paths format', () => {
       HOOKS_DATA.forEach((hook) => {
-        expect(hook.path).toMatch(/^\/hooks\//);
+        expect(hook.path).toMatch(/^\/(hooks|advanced)\//);
       });
     });
   });

@@ -1,7 +1,7 @@
 export interface HookInfo {
   id: string;
   name: string;
-  category: 'state' | 'effect' | 'performance' | 'dom' | 'other' | 'react19' | 'tanstack';
+  category: 'state' | 'effect' | 'performance' | 'dom' | 'other' | 'react19' | 'tanstack' | 'patterns';
   description: string;
   introduced: string;
   path: string;

@@ -21,6 +21,12 @@ import UseActionStatePage from './pages/basic/UseActionStatePage';
 import UseFormStatusPage from './pages/basic/UseFormStatusPage';
 import UseOptimisticPage from './pages/basic/UseOptimisticPage';
 import UsePage from './pages/basic/UsePage';
+import UseQueryPage from './pages/advanced/tanstack/UseQueryPage';
+import UseMutationPage from './pages/advanced/tanstack/UseMutationPage';
+import UseInfiniteQueryPage from './pages/advanced/tanstack/UseInfiniteQueryPage';
+import UseQueriesPage from './pages/advanced/tanstack/UseQueriesPage';
+import CustomHookPatterns from './pages/advanced/patterns/CustomHookPatterns';
+import CompositionPatterns from './pages/advanced/patterns/CompositionPatterns';
 
 function App(): React.ReactElement {
   return (
@@ -59,6 +65,16 @@ function App(): React.ReactElement {
         <Route path="/hooks/useFormStatus" element={<UseFormStatusPage />} />
         <Route path="/hooks/useOptimistic" element={<UseOptimisticPage />} />
         <Route path="/hooks/use" element={<UsePage />} />
+
+        {/* TanStack Query Hooks */}
+        <Route path="/advanced/tanstack/use-query" element={<UseQueryPage />} />
+        <Route path="/advanced/tanstack/use-mutation" element={<UseMutationPage />} />
+        <Route path="/advanced/tanstack/use-infinite-query" element={<UseInfiniteQueryPage />} />
+        <Route path="/advanced/tanstack/use-queries" element={<UseQueriesPage />} />
+
+        {/* 고급 패턴 */}
+        <Route path="/advanced/patterns/custom-hooks" element={<CustomHookPatterns />} />
+        <Route path="/advanced/patterns/composition" element={<CompositionPatterns />} />
 
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>

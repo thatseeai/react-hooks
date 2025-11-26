@@ -159,6 +159,56 @@ export const HOOKS_DATA: HookInfo[] = [
     introduced: '19+',
     path: '/hooks/use',
   },
+  // TanStack Query
+  {
+    id: 'useQuery',
+    name: 'useQuery',
+    category: 'tanstack',
+    description: '데이터 페칭 및 캐싱',
+    introduced: 'TanStack Query 5+',
+    path: '/advanced/tanstack/use-query',
+  },
+  {
+    id: 'useMutation',
+    name: 'useMutation',
+    category: 'tanstack',
+    description: '데이터 변경 작업',
+    introduced: 'TanStack Query 5+',
+    path: '/advanced/tanstack/use-mutation',
+  },
+  {
+    id: 'useInfiniteQuery',
+    name: 'useInfiniteQuery',
+    category: 'tanstack',
+    description: '무한 스크롤 데이터',
+    introduced: 'TanStack Query 5+',
+    path: '/advanced/tanstack/use-infinite-query',
+  },
+  {
+    id: 'useQueries',
+    name: 'useQueries',
+    category: 'tanstack',
+    description: '병렬 쿼리 실행',
+    introduced: 'TanStack Query 5+',
+    path: '/advanced/tanstack/use-queries',
+  },
+  // 고급 패턴
+  {
+    id: 'customHooks',
+    name: '커스텀 Hook 패턴',
+    category: 'patterns',
+    description: '재사용 가능한 Hook 작성',
+    introduced: 'React 16.8+',
+    path: '/advanced/patterns/custom-hooks',
+  },
+  {
+    id: 'composition',
+    name: 'Hook 조합 패턴',
+    category: 'patterns',
+    description: 'Hook들을 조합하는 고급 패턴',
+    introduced: 'React 16.8+',
+    path: '/advanced/patterns/composition',
+  },
 ];
 
 export function getHooksByCategory(category: HookInfo['category']): HookInfo[] {
