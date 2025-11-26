@@ -1,5 +1,6 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { Layout } from './components/Layout';
+import AnalyticsTracker from './components/common/AnalyticsTracker';
 import Home from './pages/Home';
 import UseStatePage from './pages/basic/UseStatePage';
 import UseReducerPage from './pages/basic/UseReducerPage';
@@ -24,6 +25,7 @@ import UsePage from './pages/basic/UsePage';
 function App(): React.ReactElement {
   return (
     <Layout>
+      <AnalyticsTracker />
       <Routes>
         <Route path="/" element={<Home />} />
 
