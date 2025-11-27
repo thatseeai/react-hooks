@@ -8,6 +8,8 @@ const categories = [
   { id: 'dom', name: 'DOM 접근', icon: '🎯' },
   { id: 'other', name: '기타', icon: '🔧' },
   { id: 'react19', name: 'React 19', icon: '✨' },
+  { id: 'tanstack', name: 'TanStack Query', icon: '🔄' },
+  { id: 'patterns', name: '고급 패턴', icon: '🎨' },
 ] as const;
 
 function Sidebar(): React.ReactElement {

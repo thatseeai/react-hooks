@@ -9,6 +9,8 @@ function Home(): React.ReactElement {
     { id: 'dom', name: 'DOM 접근', icon: '🎯', description: 'useRef, useImperativeHandle' },
     { id: 'other', name: '기타', icon: '🔧', description: 'useId, useDebugValue, useSyncExternalStore' },
     { id: 'react19', name: 'React 19 신규', icon: '✨', description: 'useActionState, useFormStatus, useOptimistic, use' },
+    { id: 'tanstack', name: 'TanStack Query', icon: '🔄', description: 'useQuery, useMutation, useInfiniteQuery, useQueries' },
+    { id: 'patterns', name: '고급 패턴', icon: '🎨', description: '커스텀 Hook, Hook 조합 패턴' },
   ];
 
   return (
@@ -57,7 +59,7 @@ function Home(): React.ReactElement {
         <ul className="space-y-2 text-gray-600 dark:text-gray-400">
           <li className="flex items-start space-x-2">
             <span className="mt-1">✅</span>
-            <span>React 19의 모든 Hook (19개 기본 Hook 포함)</span>
+            <span>React 19의 모든 Hook (25개 Hook 포함)</span>
           </li>
           <li className="flex items-start space-x-2">
             <span className="mt-1">✅</span>
